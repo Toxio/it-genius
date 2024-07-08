@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./normalise.css');
+@import url('./variables.css');
+
+body {
+    background-color: var(--bg-color, black);
+    color: var(--txt-color-main, white);
+}
