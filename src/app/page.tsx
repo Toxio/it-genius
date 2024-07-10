@@ -19,6 +19,10 @@ export default function Home() {
 
       <div className="flex">
         <div className="bg-[#BDBBB0] rounded-lg w-[50vw] relative overflow-hidden">
+          <p className="absolute right-7 top-7 z-10 w-96">
+            SELF SERVICE CASH DESK INTERFACE FOR THE RENOWN RETAIL GROCERY STORE
+            IN KYIV 🇺🇦
+          </p>
           <Image
             src="https://framerusercontent.com/images/xKEkFSWstXLWyVcQ1MccSwEy53g.jpg"
             alt="screen"
