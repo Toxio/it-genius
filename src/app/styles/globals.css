@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 @import url('./normalise.css');
-/*@import url('./variables.css');*/
 
-/*body {*/
-/*    background-color: var(--bg-color, black);*/
-/*    color: var(--txt-color-main, white);*/
-/*}*/
+@font-face {
+    font-family: 'Jaden';
+    src: url('../static/fonts/Jaden.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Jaden', sans-serif;
+}

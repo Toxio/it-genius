@@ -15,11 +15,13 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col items-center ">
-      <h1 className="text-4xl font-bold text-center my-14">Anton Khomenko</h1>
+      <h1 className="text-xl font-bold text-center my-14 tracking-[40px] font-[Jaden]">
+        Anton Khomenko
+      </h1>
 
       <div className="flex">
         <div className="bg-[#BDBBB0] rounded-lg w-[50vw] relative overflow-hidden">
-          <p className="absolute right-7 top-7 z-10 w-96">
+          <p className="absolute right-0 top-7 z-10 w-[22rem] text-sm">
             SELF SERVICE CASH DESK INTERFACE FOR THE RENOWN RETAIL GROCERY STORE
             IN KYIV 🇺🇦
           </p>
