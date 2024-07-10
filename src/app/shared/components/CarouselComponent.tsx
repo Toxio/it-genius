@@ -14,8 +14,6 @@ export function CarouselComponent({ images }: CarouselProps) {
       showThumbs={false}
       autoPlay
       showStatus={false}
-      // interval={5000}
-      // transitionTime={500}
       dynamicHeight={false}
       infiniteLoop
       renderArrowPrev={(onClickHandler, hasPrev, label) =>
@@ -24,7 +22,7 @@ export function CarouselComponent({ images }: CarouselProps) {
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10"
+            className="absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10 hidden md:block"
           >
             ‹
           </button>
@@ -36,7 +34,7 @@ export function CarouselComponent({ images }: CarouselProps) {
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10"
+            className="absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10 hidden md:block"
           >
             ›
           </button>
