@@ -26,9 +26,9 @@ export default function Home() {
 
       <div className="flex flex-col md:flex-row mx-2">
         <div className="bg-[#BDBBB0] rounded-lg w-[49vw] relative overflow-hidden">
-          <p className="absolute right-0 top-4 z-10 w-[19rem] text-xs">
-            SELF SERVICE CASH DESK INTERFACE FOR THE RENOWN RETAIL GROCERY STORE
-            IN KYIV 🇺🇦
+          <p className="absolute right-6 top-4 z-10 w-[20rem] text-xs uppercase">
+            operational self-service cash desk solution currently used in a
+            renowned retail grocery store in kyiv 🇺🇦
           </p>
           <Image
             src="https://framerusercontent.com/images/xKEkFSWstXLWyVcQ1MccSwEy53g.jpg"
