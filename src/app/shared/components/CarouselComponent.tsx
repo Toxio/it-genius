@@ -22,7 +22,7 @@ export function CarouselComponent({ images }: CarouselProps) {
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10 hidden md:block"
+            className="absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10 "
           >
             ‹
           </button>
@@ -34,7 +34,7 @@ export function CarouselComponent({ images }: CarouselProps) {
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10 hidden md:block"
+            className="absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10"
           >
             ›
           </button>
