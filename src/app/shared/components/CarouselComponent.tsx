@@ -15,6 +15,7 @@ export function CarouselComponent({ images }: CarouselProps) {
       autoPlay
       showStatus={false}
       dynamicHeight={false}
+      interval={5000}
       infiniteLoop
       renderArrowPrev={(onClickHandler, hasPrev, label) =>
         hasPrev && (
