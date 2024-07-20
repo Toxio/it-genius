@@ -1,6 +1,16 @@
 import Image from 'next/image';
 import { CarouselComponent } from '@/app/shared/components/CarouselComponent';
 
+type TextProps = {
+  text: {
+    goodwine: {
+      presentation: string;
+      interface: string;
+      admin: string;
+    };
+  };
+};
+
 export function GoodWine({ text }: TextProps) {
   const images = [
     'https://framerusercontent.com/images/OJ6zrMzuB4HRZe1FDsotmybieo.jpg',

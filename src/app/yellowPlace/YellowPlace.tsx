@@ -9,6 +9,14 @@ import Image from 'next/image';
 import coffeeImg from '@/app/static/assets/coffee.jpeg';
 import { CarouselComponent } from '@/app/shared/components/CarouselComponent';
 
+type TextProps = {
+  text: {
+    yellowPlace: {
+      presentation: string;
+    };
+  };
+};
+
 export function YellowPlace({ text }: TextProps) {
   const coffeeImages = [yp1Img, yp2Img, yp3Img, yp4Img, yp5Img, yp6Img, yp7Img];
 
