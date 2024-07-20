@@ -1,21 +1,24 @@
 'use client';
 
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
+import { Key } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 interface CarouselProps {
-  images: string[];
+  images: string[] | StaticImport[];
+  isWide?: boolean;
 }
 
-export function CarouselComponent({ images }: CarouselProps) {
+export function CarouselComponent({ images, isWide }: CarouselProps) {
   return (
     <Carousel
       showThumbs={false}
       autoPlay
       showStatus={false}
       dynamicHeight={false}
-      interval={5000}
+      interval={3000}
       infiniteLoop
       renderArrowPrev={(onClickHandler, hasPrev, label) =>
         hasPrev && (
@@ -42,13 +45,16 @@ export function CarouselComponent({ images }: CarouselProps) {
         )
       }
     >
-      {images.map((item, index) => (
-        <div key={index}>
+      {images.map((item: string | StaticImport, index: Key) => (
+        <div
+          key={index}
+          className={`${isWide ? 'w-[75%] md:w-full m-auto' : ''}`}
+        >
           <Image
             src={item}
             alt={'screen'}
-            width={600}
-            height={400}
+            width={1720}
+            height={1080}
             className="rounded-lg"
           />
         </div>
@@ -56,54 +62,3 @@ export function CarouselComponent({ images }: CarouselProps) {
     </Carousel>
   );
 }
-
-//
-// import React, { useState } from 'react';
-//
-// export const CarouselComponent = ({ images }: CarouselProps) => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-//
-//   const nextSlide = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-//   };
-//
-//   const prevSlide = () => {
-//     setCurrentIndex(
-//       (prevIndex) => (prevIndex - 1 + images.length) % images.length,
-//     );
-//   };
-//
-//   return (
-//     <div className="relative w-1/2 max-h-screen">
-//       <button
-//         onClick={prevSlide}
-//         className="absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-800 text-white p-2 rounded-full"
-//       >
-//         ‹
-//       </button>
-//       <div className="overflow-hidden">
-//         {images.map((image, index) => (
-//           <div
-//             key={index}
-//             className={`transition-opacity duration-500 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
-//             style={{ display: index === currentIndex ? 'block' : 'none' }}
-//           >
-//             <Image
-//               src={image}
-//               alt={'screen'}
-//               width={600}
-//               height={400}
-//               className="rounded-lg w-full h-auto max-h-screen"
-//             />
-//           </div>
-//         ))}
-//       </div>
-//       <button
-//         onClick={nextSlide}
-//         className="absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-800 text-white p-2 rounded-full"
-//       >
-//         ›
-//       </button>
-//     </div>
-//   );
-// };
