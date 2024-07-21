@@ -29,7 +29,7 @@ export default function Page() {
         />
         <div className="px-6 md:text-lg mt-10 flex flex-col md:flex-row justify-between">
           <div className="bg-[#dddcd4] rounded-lg py-10 md:w-1/2">
-            <div className="m-auto w-[70%] space-y-4 text-base">
+            <div className="m-auto px-4 md:px-0 md:w-[70%] space-y-4 text-base">
               <h2 className="font-[Jaden] tracking-[10px] mb-4">about me</h2>
               <p className="">
                 Hello! Let’s meet. I’m a Senior Front End developer from
@@ -68,7 +68,7 @@ export default function Page() {
             </div>
           </div>
           <div className="md:ml-3 mt-6 md:mt-0 md:w-1/2 bg-[#d2d2d2] rounded-lg py-10">
-            <div className="m-auto w-[70%] space-y-4 text-base">
+            <div className="m-auto px-4 md:px-0 md:w-[70%] space-y-4 text-base">
               <h2 className="font-[Jaden] tracking-[10px] mb-4">
                 about this site
               </h2>
