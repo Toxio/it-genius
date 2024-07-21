@@ -14,3 +14,7 @@
 body {
     font-family: 'Jaden', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}

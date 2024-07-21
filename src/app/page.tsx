@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { LinkedInLink } from '@/app/shared/components/LinkedInLink';
 import { GoodWine } from '@/app/goodWine';
 import { YellowPlace } from '@/app/yellowPlace';
@@ -19,19 +20,41 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center ">
-      <h1 className="text-xl font-bold text-center my-6 md:my-14 md:tracking-[40px] font-[Jaden]">
-        GoodWine
-      </h1>
-      <GoodWine text={text} />
+    <main className="min-h-screen flex flex-col items-center">
+      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-20 font-[Jaden] text-xs">
+        <ul className="flex justify-between items-center p-4">
+          <div className="flex space-x-4 ml-1.5">
+            <li>
+              <a href="#goodwine" className="text-gray-700 hover:text-black">
+                GoodWine
+              </a>
+            </li>
+            <li>
+              <a href="#yellowplace" className="text-gray-700 hover:text-black">
+                Yellow Place
+              </a>
+            </li>
+          </div>
+          <div className="mr-1.5">
+            <li>
+              <Link href="/about" className="text-gray-700 hover:text-black">
+                About
+              </Link>
+            </li>
+          </div>
+        </ul>
+      </nav>
 
-      <h1 className="text-xl font-bold text-center my-6 md:my-14 md:tracking-[40px] font-[Jaden]">
-        Yellow Place
-      </h1>
-      <YellowPlace text={text} />
+      <div id="goodwine">
+        <GoodWine text={text} />
+      </div>
+
+      <div id="yellowplace">
+        <YellowPlace text={text} />
+      </div>
 
       <div className="my-4">
-        <LinkedInLink />
+        <LinkedInLink text="Connect with me on LinkedIn" />
       </div>
     </main>
   );

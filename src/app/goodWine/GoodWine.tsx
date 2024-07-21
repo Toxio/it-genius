@@ -29,6 +29,9 @@ export function GoodWine({ text }: TextProps) {
 
   return (
     <>
+      <h1 className="text-xl font-bold text-center mt-20 mb-4 md:mb-10 md:mt-24 md:tracking-[40px] font-[Jaden]">
+        GoodWine
+      </h1>
       <div className="flex flex-col md:flex-row mx-2 uppercase">
         <p className="text-[10px] block md:hidden mb-4 text-center mx-10">
           {text.goodwine.presentation}
