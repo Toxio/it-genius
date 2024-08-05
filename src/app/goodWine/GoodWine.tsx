@@ -32,11 +32,11 @@ export function GoodWine({ text }: TextProps) {
       <h1 className="text-xl font-bold text-center mt-20 mb-4 md:mb-10 md:mt-24 md:tracking-[40px] font-[Jaden]">
         GoodWine
       </h1>
-      <div className="flex flex-col md:flex-row mx-2 uppercase">
+      <div className="flex flex-col md:flex-row mx-3.5 uppercase">
         <p className="text-[10px] block md:hidden mb-4 text-center mx-10">
           {text.goodwine.presentation}
         </p>
-        <div className="bg-[#BDBBB0] rounded-lg w-[49vw] relative overflow-hidden mx-auto">
+        <div className="bg-[#BDBBB0] rounded-lg w-[49vw] relative overflow-hidden">
           <p className="absolute right-6 top-4 z-10 w-[20rem] text-xs">
             {text.goodwine.presentation}
           </p>
@@ -48,7 +48,7 @@ export function GoodWine({ text }: TextProps) {
             className="rounded-lg"
           />
         </div>
-        <div className="bg-[#7E7A71] md:ml-1.5 rounded-lg w-full md:w-[49vw] h-fit mx-auto">
+        <div className="bg-[#7E7A71] md:ml-1.5 rounded-lg w-full md:w-[49vw] h-fit">
           <div className="mx-auto md:w-[40vw] rounded-lg">
             <CarouselComponent images={images} />
           </div>
@@ -58,14 +58,14 @@ export function GoodWine({ text }: TextProps) {
       <p className="text-[10px] mt-4 mb-2.5 mx-10 text-center block md:hidden uppercase">
         {text.goodwine.interface}
       </p>
-      <div className="flex flex-col md:flex-row mt-1.5 mx-2">
-        <div className="bg-[#9f9e8e] rounded-lg w-full md:w-[49vw] h-fit mx-auto">
+      <div className="flex flex-col md:flex-row mt-1.5 mx-3.5">
+        <div className="bg-[#9f9e8e] rounded-lg w-full md:w-[49vw] h-fit">
           <video width="880" loop autoPlay className="rounded-lg">
             <source src={videoGeneral} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="bg-[#c4c3b9] md:ml-1.5 rounded-lg w-full md:w-[49vw] h-fit mx-auto relative mt-1.5 md:mt-0">
+        <div className="bg-[#c4c3b9] md:ml-1.5 rounded-lg w-full md:w-[49vw] h-fit relative mt-1.5 md:mt-0">
           <p className="absolute z-10 w-[19rem] text-xs ml-8 mt-4 md:block hidden uppercase">
             {text.goodwine.interface}
           </p>
@@ -75,7 +75,7 @@ export function GoodWine({ text }: TextProps) {
           </video>
         </div>
       </div>
-      <div className="relative mt-1.5 mx-2 md:mx-3.5 uppercase">
+      <div className="relative mt-1.5 mx-3.5 uppercase">
         <p className="text-xs  block md:hidden mb-4 text-center mt-2 text-[10px] mx-10">
           {text.goodwine.admin}
         </p>

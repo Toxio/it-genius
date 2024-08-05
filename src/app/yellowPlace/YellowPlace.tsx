@@ -25,7 +25,7 @@ export function YellowPlace({ text }: TextProps) {
       <h1 className="text-xl font-bold text-center mt-6 mb-4 md:my-10 md:tracking-[40px] font-[Jaden]">
         Yellow Place
       </h1>
-      <div className="flex flex-col md:flex-row mx-2 uppercase">
+      <div className="flex flex-col md:flex-row mx-3.5 uppercase">
         <p className="text-[10px] mb-2.5 mx-10 text-center block md:hidden">
           {text.yellowPlace.presentation}
         </p>
