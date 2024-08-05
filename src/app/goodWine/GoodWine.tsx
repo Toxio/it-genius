@@ -36,7 +36,7 @@ export function GoodWine({ text }: TextProps) {
         <p className="text-[10px] block md:hidden mb-4 text-center mx-10">
           {text.goodwine.presentation}
         </p>
-        <div className="bg-[#BDBBB0] rounded-lg w-[49vw] relative overflow-hidden">
+        <div className="bg-[#BDBBB0] rounded-lg w-[49vw] relative overflow-hidden mx-auto">
           <p className="absolute right-6 top-4 z-10 w-[20rem] text-xs">
             {text.goodwine.presentation}
           </p>
@@ -48,7 +48,7 @@ export function GoodWine({ text }: TextProps) {
             className="rounded-lg"
           />
         </div>
-        <div className="bg-[#7E7A71] md:ml-1.5 rounded-lg w-full md:w-[49vw] h-fit">
+        <div className="bg-[#7E7A71] md:ml-1.5 rounded-lg w-full md:w-[49vw] h-fit mx-auto">
           <div className="mx-auto md:w-[40vw] rounded-lg">
             <CarouselComponent images={images} />
           </div>
