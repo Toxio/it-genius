@@ -11,9 +11,7 @@ import yp7Img from '@/app/static/assets/yp7.png';
 
 type TextProps = {
   text: {
-    yellowPlace: {
-      presentation: string;
-    };
+    presentation: string;
   };
 };
 
@@ -27,11 +25,11 @@ export function YellowPlace({ text }: TextProps) {
       </h1>
       <div className="mx-3.5 flex flex-col uppercase md:flex-row">
         <p className="mx-10 mb-2.5 block text-center text-[10px] md:hidden">
-          {text.yellowPlace.presentation}
+          {text.presentation}
         </p>
         <div className="relative flex w-[30vw] overflow-hidden rounded-lg bg-[#BDBBB0]">
           <p className="absolute left-6 top-4 z-10 w-[16rem] text-xs text-white">
-            {text.yellowPlace.presentation}
+            {text.presentation}
           </p>
           <Image
             src={coffeeImg}

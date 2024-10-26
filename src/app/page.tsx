@@ -46,11 +46,11 @@ export default function Home() {
       </nav>
 
       <div id="goodwine">
-        <GoodWine text={text} />
+        <GoodWine text={text.goodwine} />
       </div>
 
       <div id="yellowplace">
-        <YellowPlace text={text} />
+        <YellowPlace text={text.yellowPlace} />
       </div>
 
       <div className="my-4">
