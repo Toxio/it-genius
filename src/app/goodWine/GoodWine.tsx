@@ -29,14 +29,14 @@ export function GoodWine({ text }: TextProps) {
 
   return (
     <>
-      <h1 className="text-xl font-bold text-center mt-20 mb-4 md:mb-10 md:mt-24 md:tracking-[40px] font-[Jaden]">
+      <h1 className="mb-4 mt-20 text-center font-[Jaden] text-xl font-bold md:mb-10 md:mt-24 md:tracking-[40px]">
         GoodWine
       </h1>
-      <div className="flex flex-col md:flex-row mx-3.5 uppercase">
-        <p className="text-[10px] block md:hidden mb-4 text-center mx-10">
+      <div className="mx-3.5 flex flex-col uppercase md:flex-row">
+        <p className="mx-10 mb-4 block text-center text-[10px] md:hidden">
           {text.goodwine.presentation}
         </p>
-        <div className="bg-[#BDBBB0] rounded-lg w-[49vw] relative overflow-hidden">
+        <div className="relative w-[49vw] overflow-hidden rounded-lg bg-[#BDBBB0]">
           <p className="absolute right-6 top-4 z-10 w-[20rem] text-xs">
             {text.goodwine.presentation}
           </p>
@@ -48,25 +48,25 @@ export function GoodWine({ text }: TextProps) {
             className="rounded-lg"
           />
         </div>
-        <div className="bg-[#7E7A71] md:ml-1.5 rounded-lg w-full md:w-[49vw] h-fit">
-          <div className="mx-auto md:w-[40vw] rounded-lg">
+        <div className="h-fit w-full rounded-lg bg-[#7E7A71] md:ml-1.5 md:w-[49vw]">
+          <div className="mx-auto rounded-lg md:w-[40vw]">
             <CarouselComponent images={images} />
           </div>
         </div>
       </div>
 
-      <p className="text-[10px] mt-4 mb-2.5 mx-10 text-center block md:hidden uppercase">
+      <p className="mx-10 mb-2.5 mt-4 block text-center text-[10px] uppercase md:hidden">
         {text.goodwine.interface}
       </p>
-      <div className="flex flex-col md:flex-row mt-1.5 mx-3.5">
-        <div className="bg-[#9f9e8e] rounded-lg w-full md:w-[49vw] h-fit">
+      <div className="mx-3.5 mt-1.5 flex flex-col md:flex-row">
+        <div className="h-fit w-full rounded-lg bg-[#9f9e8e] md:w-[49vw]">
           <video width="880" loop autoPlay className="rounded-lg">
             <source src={videoGeneral} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="bg-[#c4c3b9] md:ml-1.5 rounded-lg w-full md:w-[49vw] h-fit relative mt-1.5 md:mt-0">
-          <p className="absolute z-10 w-[19rem] text-xs ml-8 mt-4 md:block hidden uppercase">
+        <div className="relative mt-1.5 h-fit w-full rounded-lg bg-[#c4c3b9] md:ml-1.5 md:mt-0 md:w-[49vw]">
+          <p className="absolute z-10 ml-8 mt-4 hidden w-[19rem] text-xs uppercase md:block">
             {text.goodwine.interface}
           </p>
           <video width="880" loop autoPlay className="rounded-lg border-0">
@@ -75,11 +75,11 @@ export function GoodWine({ text }: TextProps) {
           </video>
         </div>
       </div>
-      <div className="relative mt-1.5 mx-3.5 uppercase">
-        <p className="text-xs  block md:hidden mb-4 text-center mt-2 text-[10px] mx-10">
+      <div className="relative mx-3.5 mt-1.5 uppercase">
+        <p className="mx-10 mb-4 mt-2 block text-center text-[10px] text-xs md:hidden">
           {text.goodwine.admin}
         </p>
-        <p className="absolute z-10 w-[19rem] text-xs left-32 top-4 hidden md:block text-white">
+        <p className="absolute left-32 top-4 z-10 hidden w-[19rem] text-xs text-white md:block">
           {text.goodwine.admin}
         </p>
         <Image

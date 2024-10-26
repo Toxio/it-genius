@@ -26,7 +26,7 @@ export function CarouselComponent({ images, isWide }: CarouselProps) {
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10 "
+            className="absolute left-4 top-1/2 z-10 w-10 -translate-y-1/2 transform rounded-full bg-gray-800 p-2 font-bold text-white"
           >
             ‹
           </button>
@@ -38,7 +38,7 @@ export function CarouselComponent({ images, isWide }: CarouselProps) {
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-800 text-white p-2 rounded-full z-10 font-bold w-10"
+            className="absolute right-4 top-1/2 z-10 w-10 -translate-y-1/2 transform rounded-full bg-gray-800 p-2 font-bold text-white"
           >
             ›
           </button>
@@ -48,7 +48,7 @@ export function CarouselComponent({ images, isWide }: CarouselProps) {
       {images.map((item: string | StaticImport, index: Key) => (
         <div
           key={index}
-          className={`${isWide ? 'w-[75%] md:w-full m-auto' : ''}`}
+          className={`${isWide ? 'm-auto w-[75%] md:w-full' : ''}`}
         >
           <Image
             src={item}

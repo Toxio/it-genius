@@ -6,19 +6,19 @@ import myPortrait from '@/app/static/assets/myPortrait.jpg';
 
 export default function Page() {
   return (
-    <main className="min-h-screen flex flex-col items-center ">
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-20 font-[Jaden] text-xs">
+    <main className="flex min-h-screen flex-col items-center">
+      <nav className="fixed left-0 top-0 z-20 w-full bg-white font-[Jaden] text-xs shadow-md">
         <ul className="flex items-center p-4">
           <li>
-            <Link href="/" className="text-gray-700 hover:text-black ml-1.5">
+            <Link href="/" className="ml-1.5 text-gray-700 hover:text-black">
               Back
             </Link>
           </li>
         </ul>
       </nav>
 
-      <div className="flex  flex-col items-center">
-        <h1 className="text-xl font-bold text-center mt-20 mb-4 md:mb-10 md:mt-24 md:tracking-[40px] font-[Jaden]">
+      <div className="flex flex-col items-center">
+        <h1 className="mb-4 mt-20 text-center font-[Jaden] text-xl font-bold md:mb-10 md:mt-24 md:tracking-[40px]">
           Anton Khomenko
         </h1>
         <Image
@@ -27,11 +27,11 @@ export default function Page() {
           width={250}
           className="rounded-xl"
         />
-        <div className="px-6 md:text-lg mt-10 flex flex-col md:flex-row justify-between">
-          <div className="bg-[#dddcd4] rounded-lg py-10 md:w-1/2">
-            <div className="m-auto px-4 md:px-0 md:w-[70%] space-y-4 text-base">
-              <h2 className="font-[Jaden] tracking-[10px] mb-4">about me</h2>
-              <p className="">
+        <div className="mt-10 flex flex-col justify-between px-6 md:flex-row md:text-lg">
+          <div className="rounded-lg bg-[#dddcd4] py-10 md:w-1/2">
+            <div className="m-auto space-y-4 px-4 text-base md:w-[70%] md:px-0">
+              <h2 className="mb-4 font-[Jaden] tracking-[10px]">about me</h2>
+              <p>
                 Hello! Let’s meet. I’m a Senior Front End developer from
                 Ukraine, but currently residing in France. I've got two
                 educations, the first one is master's degree in System
@@ -39,7 +39,7 @@ export default function Page() {
                 of rich development experience, I am passionate about the latest
                 IT advancements.
               </p>
-              <p className="">
+              <p>
                 Throughout my career, I have gained extensive experience in
                 architecture, design, and development of distributed systems. I
                 have a strong background working with startups, including a
@@ -49,7 +49,7 @@ export default function Page() {
                 frameworks including JavaScript, React, TypeScript, Next, and
                 many others.
               </p>
-              <p className="">
+              <p>
                 I thrive on comprehensive and complex tasks, seeking out unusual
                 solutions and staying updated with the latest trends and
                 innovations in development. My attention to detail, commitment
@@ -59,7 +59,7 @@ export default function Page() {
                 and self-organization skills, coupled with an inquisitive
                 nature, help me to find the best solutions to any given task.
               </p>
-              <p className="">
+              <p>
                 I am excited about the possibility of collaborating on
                 innovative projects and pushing the boundaries of what is
                 possible in front-end development. Let’s create something
@@ -67,9 +67,9 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <div className="md:ml-3 mt-6 md:mt-0 md:w-1/2 bg-[#d2d2d2] rounded-lg py-10">
-            <div className="m-auto px-4 md:px-0 md:w-[70%] space-y-4 text-base">
-              <h2 className="font-[Jaden] tracking-[10px] mb-4">
+          <div className="mt-6 rounded-lg bg-[#d2d2d2] py-10 md:ml-3 md:mt-0 md:w-1/2">
+            <div className="m-auto space-y-4 px-4 text-base md:w-[70%] md:px-0">
+              <h2 className="mb-4 font-[Jaden] tracking-[10px]">
                 about this site
               </h2>
               <p>
@@ -110,11 +110,11 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="flex my-4 space-x-8 mt-10">
+        <div className="my-4 mt-10 flex space-x-8">
           <LinkedInLink text="Linkedin" color="black" />
           <a
             href="mailto:anton.homenko@gmail.com"
-            className="text-gray-700 hover:text-black flex items-center"
+            className="flex items-center text-gray-700 hover:text-black"
           >
             <FaEnvelope size={24} />
             <span className="ml-1.5">anton.homenko@gmail.com</span>

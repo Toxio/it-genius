@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { LinkedInLink } from '@/app/shared/components/LinkedInLink';
 import { GoodWine } from '@/app/goodWine';
+import { LinkedInLink } from '@/app/shared/components/LinkedInLink';
 import { YellowPlace } from '@/app/yellowPlace';
 
 export default function Home() {
@@ -20,10 +20,10 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center">
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-20 font-[Jaden] text-xs">
-        <ul className="flex justify-between items-center p-4">
-          <div className="flex space-x-4 ml-1.5">
+    <main className="flex min-h-screen flex-col items-center">
+      <nav className="fixed left-0 top-0 z-20 w-full bg-white font-[Jaden] text-xs shadow-md">
+        <ul className="flex items-center justify-between p-4">
+          <div className="ml-1.5 flex space-x-4">
             <li>
               <a href="#goodwine" className="text-gray-700 hover:text-black">
                 GoodWine

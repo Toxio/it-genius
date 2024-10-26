@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import coffeeImg from '@/app/static/assets/coffee.jpeg';
 import { CarouselComponent } from '@/app/shared/components/CarouselComponent';
+import coffeeImg from '@/app/static/assets/coffee.jpeg';
 import yp1Img from '@/app/static/assets/yp1.png';
 import yp2Img from '@/app/static/assets/yp2.png';
 import yp3Img from '@/app/static/assets/yp3.png';
@@ -22,14 +22,14 @@ export function YellowPlace({ text }: TextProps) {
 
   return (
     <>
-      <h1 className="text-xl font-bold text-center mt-6 mb-4 md:my-10 md:tracking-[40px] font-[Jaden]">
+      <h1 className="mb-4 mt-6 text-center font-[Jaden] text-xl font-bold md:my-10 md:tracking-[40px]">
         Yellow Place
       </h1>
-      <div className="flex flex-col md:flex-row mx-3.5 uppercase">
-        <p className="text-[10px] mb-2.5 mx-10 text-center block md:hidden">
+      <div className="mx-3.5 flex flex-col uppercase md:flex-row">
+        <p className="mx-10 mb-2.5 block text-center text-[10px] md:hidden">
           {text.yellowPlace.presentation}
         </p>
-        <div className="bg-[#BDBBB0] flex rounded-lg w-[30vw] relative overflow-hidden">
+        <div className="relative flex w-[30vw] overflow-hidden rounded-lg bg-[#BDBBB0]">
           <p className="absolute left-6 top-4 z-10 w-[16rem] text-xs text-white">
             {text.yellowPlace.presentation}
           </p>
@@ -41,7 +41,7 @@ export function YellowPlace({ text }: TextProps) {
             className="rounded-lg"
           />
         </div>
-        <div className="bg-[#a4a29d] rounded-lg w-full md:w-[68vw] md:ml-1.5">
+        <div className="w-full rounded-lg bg-[#a4a29d] md:ml-1.5 md:w-[68vw]">
           <div className="mx-auto rounded-lg">
             <CarouselComponent images={coffeeImages} isWide />
           </div>
