@@ -58,7 +58,7 @@ export function GoodWine({ text }: TextProps) {
       </p>
       <div className="mx-3.5 mt-1.5 flex flex-col md:flex-row">
         <div className="h-fit w-full rounded-lg bg-[#9f9e8e] md:w-[49vw]">
-          <video width="880" loop autoPlay className="rounded-lg">
+          <video width="880" loop autoPlay muted className="rounded-lg">
             <source src={videoGeneral} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -67,7 +67,13 @@ export function GoodWine({ text }: TextProps) {
           <p className="absolute z-10 ml-8 mt-4 hidden w-[19rem] text-xs uppercase md:block">
             {text.interface}
           </p>
-          <video width="880" loop autoPlay className="rounded-lg border-0">
+          <video
+            width="880"
+            loop
+            autoPlay
+            muted
+            className="rounded-lg border-0"
+          >
             <source src={videoClient} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
