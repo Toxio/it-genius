@@ -5,7 +5,7 @@ import { YellowPlace } from '@/app/yellowPlace';
 
 export default function Home() {
   const text = {
-    goodwine: {
+    goodWine: {
       presentation:
         'operational self-service cash desk solution currently used in a renowned retail grocery store in kyiv 🇺🇦',
       interface:
@@ -46,7 +46,7 @@ export default function Home() {
       </nav>
 
       <div id="goodwine">
-        <GoodWine text={text.goodwine} />
+        <GoodWine text={text.goodWine} />
       </div>
 
       <div id="yellowplace">
