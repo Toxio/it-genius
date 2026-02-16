@@ -35,9 +35,10 @@ export default function Page() {
                 Hello! Let’s meet. I’m a Senior Front End developer from
                 Ukraine, but currently residing in France. I've got two
                 educations, the first one is master's degree in System
-                Programming, and the second one — in Finance. With over 9 years
-                of rich development experience, I am passionate about the latest
-                IT advancements.
+                Programming, and the second one — in Finance. With 16 years of
+                experience as a software developer, including 6 years in CRM
+                development and over 10 years specializing in front-end
+                technologies, I am passionate about the latest IT advancements.
               </p>
               <p>
                 Throughout my career, I have gained extensive experience in
@@ -46,8 +47,8 @@ export default function Page() {
                 mental health startup in the USA (MiResource), and have served
                 as a team lead, adept at adapting to varying company cultures
                 and sizes. My expertise spans across various technologies and
-                frameworks including JavaScript, React, TypeScript, Next, and
-                many others.
+                frameworks including JavaScript, React, Next, TypeScript, React
+                Native, and many others.
               </p>
               <p>
                 I thrive on comprehensive and complex tasks, seeking out unusual
@@ -73,8 +74,11 @@ export default function Page() {
                 about this site
               </h2>
               <p>
-                Welcome to my portfolio! This site is built to showcase my best
-                projects and highlight the innovative solutions I've developed.
+                Welcome to my portfolio! Over the years, I’ve worked on many
+                complex, large-scale projects, but this site focuses on a select
+                few of my own solutions that I personally designed and built
+                from scratch — which is why it holds special meaning for me and
+                makes me especially proud.
               </p>
               <p>
                 One of my most notable achievements is the self-checkout system
