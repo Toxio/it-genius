@@ -74,7 +74,7 @@ export default function Page() {
                 about this site
               </h2>
               <p>
-                Welcome to my portfolio! Over the years, I’ve worked on many
+                Welcome to my portfolio! Over the years, I've worked on many
                 complex, large-scale projects, but this site focuses on a select
                 few of my own solutions that I personally designed and built
                 from scratch — which is why it holds special meaning for me and
